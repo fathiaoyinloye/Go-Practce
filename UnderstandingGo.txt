@@ -1,0 +1,5 @@
+Getting started with go
+1. create a folder -> mkdir go-proper-project
+2. in the folder run -> go mod init my-projects(its gonna see all a go module)
+3. you can then create related file in it 
+

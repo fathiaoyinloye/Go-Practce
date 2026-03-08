@@ -5,7 +5,7 @@ import (
 )
 func main() {
 	//To create an empty map, use the builtin make: make(map[key-type]val-type).
-	m := make(map[string]int)
+	m := make(map[string]ingit t)
 	//Set key/value pairs using typical name[key] = val syntax.
 
   	m["k1"] = 7
@@ -35,13 +35,13 @@ func main() {
    	 
     	fmt.Println("prs:", prs, "p",p)
     
-    	//n := map[string]int{"foo": 1, "bar": 2}
-    	//fmt.Println("map:", n)
+    	n := map[string]int{"foo": 1, "bar": 2}
+    	fmt.Println("map:", n)
 	//The maps package contains a number of useful utility functions for maps.
 
-    	//n2 := map[string]int{"foo": 7, "bar": 2}
-    	//if maps.Equal(n, n2) {
-        //	fmt.Println("n == n2")
-   	 //}
+    	n2 := map[string]int{"foo": 7, "bar": 2}
+    	if maps.Equal(n, n2) {
+        	fmt.Println("n == n2")
+   	 }
     	
 }
