@@ -8,9 +8,11 @@ import (
 
 func TestHelloName(t *testing.T) {
     want := "Hi, Gladys. Welcome!"
-    msg, err := ello("Gladys")
-    if !want.MatchString(msg) || err != nil {
-        t.Errorf(`Hello("Gladys") = %q, %v, want match for %#q, nil`, msg, err, want)
+    msg, err := Hello("Gladys")
+    if msg != want || err != nil{
+    	t.Errorf(`Hello("Gladys") = %q, %v, want match for %#q, nil`, msg, err, want)
+
+    
     }
 }
 
