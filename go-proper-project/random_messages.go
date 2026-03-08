@@ -1,19 +1,22 @@
 package main
 import (
 	"fmt"
-	"math/rand"
-	//"errors"
+	"errors"
 )
 
-funtion Hellos([] string name) map[string] string{
+func hellos(names []string) (map[string] string, error){
 	messages := make (map[string]string)
 	
-	for count:= 0; count < len(name); count++{
-	    message := fmt.Sprintf(randomFormat(), name[count])
-		mesages[name] = message
+    	for _, name := range names {
+    	if name == ""{
+    		return nil , errors.New("Name cannot be an empty string")
+    	
+    	}
+    	
+	    message := fmt.Sprintf(randomFormat(), name)
+		messages[name] = message
 	
 	}
-	return messages;
-
+	return messages, nil
 
 }

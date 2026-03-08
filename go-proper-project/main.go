@@ -37,4 +37,13 @@ func main() {
     fmt.Println(message2)
     
     
+   log.SetPrefix("messages: ")
+  names := []string{"fathua", "", "omotemmy"} 
+  messages, err4 := hellos(names)
+  if messages == nil{
+  	log.Fatal(err4)
+  }
+  fmt.Println(messages);
+    
+    
 }
