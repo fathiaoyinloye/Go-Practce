@@ -1,8 +1,7 @@
-package greetings
+package main
 
 import (
     "testing"
-    "regexp"
 )
 
 
@@ -24,3 +23,6 @@ func TestHelloEmpty(t *testing.T) {
         t.Errorf(`Hello("") = %q, %v, want "", error`, msg, err)
     }
 }
+
+
+

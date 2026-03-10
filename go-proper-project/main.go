@@ -38,7 +38,7 @@ func main() {
     
     
    log.SetPrefix("messages: ")
-  names := []string{"fathua", "", "omotemmy"} 
+  names := []string{"fathua", "toba", "omotemmy"} 
   messages, err4 := hellos(names)
   if messages == nil{
   	log.Fatal(err4)
