@@ -15,4 +15,17 @@ func TestSortNumbers(t *testing.T) {
 
     
     }
+
+
+
+}
+
+
+func TestForAboutMe(t *testing.T){
+	want := "My name is Fathia and I am 20 years old\n"
+	person := Person{Name: "Fathia", Age: 20}
+	 aboutMeMessage := aboutMe(person)
+	if aboutMeMessage != want {
+		t.Errorf(`aboutMe(person) = %q, want match for %#q`, aboutMeMessage, want)
+	}			
 }
